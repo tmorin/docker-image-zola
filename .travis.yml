@@ -1,0 +1,13 @@
+language: generic
+dist: bionic
+services:
+  - docker
+env:
+  global:
+    - zola_version="0.10.1"
+    - tag_image="thibaultmorin/zola"
+    - tag_version="$zola_version-$TRAVIS_CPU_ARCH"
+    - tag="$tag_image:$tag_version"
+before_install: ./scripts/before_install.sh
+script: ./scripts/build.sh
+after_success: ./scripts/manifest.sh
