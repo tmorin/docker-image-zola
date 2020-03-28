@@ -5,6 +5,7 @@ services:
 env:
   global:
     - zola_version="0.10.1"
+    - vcf_ref="$TRAVIS_COMMIT"
     - tag_image="thibaultmorin/zola"
     - tag_version="$zola_version-$TRAVIS_CPU_ARCH"
     - tag="$tag_image:$tag_version"
