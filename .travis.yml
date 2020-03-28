@@ -11,4 +11,6 @@ env:
     - tag="$tag_image:$tag_version"
 before_install: ./scripts/before_install.sh
 script: ./scripts/build.sh
-after_success: ./scripts/manifest.sh
+after_success:
+  - ./scripts/manifest.sh
+  - curl --data "" https://hooks.microbadger.com/images/thibaultmorin/zola/1fOBVfKip6cv8KXonRU77Cdpdf4=
