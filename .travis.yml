@@ -4,7 +4,7 @@ services:
   - docker
 env:
   global:
-    - zola_version="0.10.1"
+    - zola_version="0.11.0"
     - vcs_ref="$TRAVIS_COMMIT"
     - tag_image="thibaultmorin/zola"
     - tag_version="$zola_version-$TRAVIS_CPU_ARCH"
