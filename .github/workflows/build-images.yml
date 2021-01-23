@@ -1,8 +1,8 @@
 name: Build Images
 on: [ push ]
 env:
-  DOCKER_VERSION_FULL: "0.12.2"
-  DOCKER_VERSION_MINOR: "0.12"
+  DOCKER_VERSION_FULL: "0.13.0"
+  DOCKER_VERSION_MINOR: "0.13"
   DOCKER_VERSION_MAJOR: "0"
 jobs:
   images:
