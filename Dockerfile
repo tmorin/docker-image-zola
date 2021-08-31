@@ -1,5 +1,5 @@
 FROM bitnami/minideb AS builder
-ARG version="0.13.0"
+ARG version="0.14.0"
 RUN install_packages python-pip curl tar python-setuptools rsync binutils
 RUN pip install dockerize
 RUN mkdir -p /workdir
