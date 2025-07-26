@@ -1,5 +1,5 @@
 FROM rust:1-buster AS builder
-ARG version="0.16.1"
+ARG version="0.21.0"
 RUN apt-get update
 RUN apt-get install -y python-pip curl tar python-setuptools rsync binutils
 RUN pip install dockerize
